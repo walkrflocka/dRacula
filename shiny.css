@@ -1,0 +1,111 @@
+
+/* Enjoy mediocre CSS written by a statistician. */
+
+:root {
+  --background: #282a36;
+  --currentLine: #44475a;
+  --selection: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+
+@font-face {
+  font-family: 'Anonymous Pro', monospace;
+  src: url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Make text highlights fancy and purple,
+the people love fancy text */
+::selection {
+  background-color: var(--purple);
+  color: var(--background);
+}
+
+.shiny-input-container {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+/* Datepicker color correct */
+.datepicker {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+.datepicker table tr td.active.active {
+  background-color: var(--purple);
+  color: var(--foreground);
+}
+
+.datepicker table tr td.active.active:hover, .datepicker table tr td.active.active:focus {
+  background-color: var(--pink);
+  color: var(--background);
+}
+
+/* Nav tabs color correction */
+.nav-tabs {
+  border-color: var(--currentLine);
+  color: var(--foreground);
+  font-family: 'Anonymous Pro';
+}
+
+.nav-tabs li a {
+  background-color: var(--selection);
+  color: var(--foreground);
+}
+
+.nav-tabs li.active a, .nav-tabs li.active a:focus {
+  background-color: var(--purple);
+  border-color: transparent;
+  color: var(--background);
+}
+
+.nav-tabs li a:hover, .nav-tabs li.active a:hover {
+  background-color: var(--pink);
+  border-color: transparent;
+  color: var(--background);
+}
+
+/* misc */
+.btn-default {
+}
+
+.btn-default:hover, .btn-default:focus {
+  background-color: var(--purple);
+}
+
+/* Table rice */
+td, th {
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px dotted var(--purple);
+}
+
+thead>tr>th {
+  border-bottom: 1px solid var(--purple);
+}
+
+table {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* code rice */
+code {
+  background-color: var(--purple);
+  color: var(--background);
+  font-family: Anonymous Pro;
+}
